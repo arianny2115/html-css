@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Tente abrir esse site em varios dipositivos diferentes ou simplesmete aumente e diminua o seu navegador</p>
+    <picture>
+        <source media="(max-width:750px )" srcset="imagens/foto-p.png" type="image/png">     <!--source:media:type-->
+        <source media="(max-width:1050px )" srcset="imagens/foto-m.png" type="image/png"><!--o Source com a imagem menor tem q ser acima da com a imagem maior e a imagem é a base de tudo-->
+        <img src="imagens/foto-g.png" alt="Imagem flexivel">
+    </picture>
+    <h1>Reproduzindo áudios</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/my-dog-is-happy-reed-mathis.mp3" type="audio/mpeg">
+        <source src="midia/my-dog-is-happy-reed-mathis.ogg" type="audio/ogg">
+        <source src="midia/my-dog-is-happy-reed-mathis.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzir audio. clique <a href="midia/my-dog-is-happy-reed-mathis.mp3">aqui</a> para baixar o arquivo MP3</p> <!-- o source tenta primeramente carregar o que esta na linha de cima se ele não conseguir ele carrega oq esta em baixo-->
+        <!-- Evitar o arquivo wav pois ele é pesado-->
+    </audio>
+    <!-- <audio src="midia/my-dog-is-happy-reed-mathis.mp3" controls autoplay ></audio> <FORMA LIMITADA
+        < os formatos de audio são = MP3 WAV OGG> -->
+</body>
+</html>
