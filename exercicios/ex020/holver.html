@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Holver</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        div > p {
+            display: none;
+        }
+       div:hover > p{
+        /*  > Representa algo que esta dentro da do seletor */
+            display: block;
+            color: white;
+            background-color: red;
+            width: 250px;
+       }
+        span {
+            font-weight: bold;
+            color: rgb(173, 173, 2);
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo e Holver</h1>
+    <p>passe o mouse no texto abaixo e tenha uma <span>surpresa</span></p>
+    <div>
+        Passe o mouse aqui
+        <p>TEXTO ESCONDIDO</p>
+        
+    </div>
+    <p>Fim do Exemplo</p>
+</body>
+</html>
