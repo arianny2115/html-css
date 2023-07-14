@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+body {
+    background-color: #C2FEDD;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+    color: #1F5E3C ;
+}
+h1#principal { 
+    /* colocar o elemento que deve ser mudado na frente do seletor é o melhor jeito :p */
+  text-align: center;  
+  background-color: #36664C;
+  color: rgb(255, 255, 255);
+}
+h2 {
+    color: #277545;
+}
+.basico {
+    color: #277545;
+    font-weight: bold;
+}
+.intermediario {
+    color: #80793c;
+}
+.avancado {
+    color: #753327;
+}
+.destaque {
+    background-color: rgba(172, 175, 3, 0.301);
+}
