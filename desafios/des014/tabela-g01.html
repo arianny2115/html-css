@@ -18,12 +18,15 @@
         td, th {
             border: 1px solid black;
             width: 100px;
-            text-align: center;
+
             
         }
         thead {
             background-color: gray;
             color: white;
+        }
+        td.num {
+            text-align: center;
         }
     </style>
 </head>
@@ -33,7 +36,7 @@
             <tr>
                 <th rowspan="2" scope="col">Áreas</th>
                 <th rowspan="2" scope="col">Diciplinas</th>
-                <th colspan="2">Notas</th>
+                <th colspan="2" scope="colgroup">Notas</th>
                 <th rowspan="2" scope="col">Média</th>
                 
             </tr>
@@ -44,53 +47,53 @@
         </thead>
         <tbody>
             <tr>
-                <td rowspan="4">Exatas</td>
+                <th rowspan="4" scope="rowgroup">Exatas</th>
                 <td>Matemática</td>
-                <td>8.0</td>
-                <td>7.0</td>
-                <td>7.5</td>
+                <td class="num">8.0</td>
+                <td class="num">7.0</td>
+                <td class="num" class="num">7.5</td>
             </tr>
             <tr>
                 <td>Física</td>
-                <td>6.0</td>
-                <td>10.0</td>
-                <td>8.0</td>
+                <td class="num">6.0</td>
+                <td class="num">10.0</td>
+                <td class="num">8.0</td>
             </tr>
             <tr>
                 <td>Química</td>
-                <td>3.0</td>
-                <td>8.0</td>
-                <td>5.5</td>
+                <td class="num">3.0</td>
+                <td class="num">8.0</td>
+                <td class="num">5.5</td>
             </tr>
             <tr>
                 <td>Biologia</td>
-                <td>1.0</td>
-                <td>4.0</td>
-                <td>2.5</td>
+                <td class="num">1.0</td>
+                <td class="num">4.0</td>
+                <td class="num">2.5</td>
             </tr>
         </tbody>
         <thead>
             <th colspan="4" scope="row">Média de exatas</th>
-            <td><strong>5.8</strong></td>
+            <td class="num"><strong>5.8</strong></td>
         </thead>
         <tbody>
             <tr>
-                <td rowspan="2">Humanas</td>
+                <th rowspan="2" scope="rowgroup">Humanas</th>
                 <td>hitória</td>
-                <td>3.0</td>
-                <td>5.0</td>
-                <td>4</td>
+                <td class="num">3.0</td>
+                <td class="num">5.0</td>
+                <td class="num">4.0</td>
             </tr>
             <tr>
                 <td>Geografia</td>
-                <td>3.0</td>
-                <td>10.0</td>
-                <td>6.5</td>
+                <td class="num">3.0</td>
+                <td class="num">10.0</td>
+                <td class="num">6.5</td>
             </tr>
         </tbody>
         <thead>
             <th colspan="4" scope="row">Média de Humanas</th>
-            <td><strong>5.25</strong></td>
+            <td class="num"><strong>5.25</strong></td>
         </thead>
     </table>
 </body>
